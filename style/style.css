@@ -49,7 +49,6 @@
     display: flex;
     gap: 12px;
     overflow: auto;
-    margin-left: 30%;
  
 }
 .forecast::-webkit-scrollbar{

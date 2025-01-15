@@ -11,7 +11,7 @@ const BASE_URL = ""
 
 
 async function fetchWeather(city){
-    const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=c3a6dc4386cc49e7ba0155411242212&q=${city}&days=7&aqi=yes&alerts=yes`)
+    const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=67da739cc15c4a0e92681234251501&q=${city}&days=10&aqi=yes&alerts=yes`)
     response
         .json()
         .then(res => {
@@ -36,7 +36,7 @@ async function fetchWeather(city){
 }
 
 window.onload = ()=> {
-    fetchWeather("London")
+    fetchWeather("Tashkent")
 }
 
 formEl.addEventListener("submit", e => {
